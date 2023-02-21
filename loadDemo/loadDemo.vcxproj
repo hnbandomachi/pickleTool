@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{60fc7ebd-9563-4970-8d95-d1cb22df3c7b}</ProjectGuid>
+    <RootNamespace>loadDemo</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <OutDir>$(SolutionDir)bin\$(Platform)\$(Configuration)</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;HAVE_STRUCT_TIMESPEC;OC_NEW_STYLE_INCLUDES;OC_FACTOR_INTO_H_AND_CC</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\huyle1\projects\research\PicklingTools170Release\C++\opencontainers_1_8_5\include;C:\huyle1\projects\research\PicklingTools170Release\C++\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;HAVE_STRUCT_TIMESPEC;OC_NEW_STYLE_INCLUDES;OC_FACTOR_INTO_H_AND_CC</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\huyle1\projects\research\PicklingTools170Release\C++\opencontainers_1_8_5\include;C:\huyle1\projects\research\PicklingTools170Release\C++\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;HAVE_STRUCT_TIMESPEC;OC_NEW_STYLE_INCLUDES;OC_FACTOR_INTO_H_AND_CC</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\huyle1\projects\research\PicklingTools170Release\C++\opencontainers_1_8_5\include;C:\huyle1\projects\research\PicklingTools170Release\C++\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;HAVE_STRUCT_TIMESPEC;OC_NEW_STYLE_INCLUDES;OC_FACTOR_INTO_H_AND_CC</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>C:\huyle1\projects\research\PicklingTools170Release\C++\opencontainers_1_8_5\include;C:\huyle1\projects\research\PicklingTools170Release\C++\;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <LanguageStandard_C>stdc11</LanguageStandard_C>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\checkshm_test.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\chooseser_test.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\clientside_ex.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\dict2opal.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\dict2xml.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\fdtools.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\httpclient_ex.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\httpserver_ex.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\json_ex.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\load.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\m2convertrep.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\m2pythonpickler.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\m2pythontools.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\m2ser.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\m2streamdataenc.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\midaslistener_ex.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\midasserver_ex.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\midassocket.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\midastalker_ex.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\midastalker_ex2.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\midasyeller_ex.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\middleside_ex.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\opal2dict.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\opaltest.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\opencontainers_1_8_5\include\ocproxy.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\opencontainers_1_8_5\include\ocser.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\opencontainers_1_8_5\include\ocserialize.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\opencontainers_1_8_5\include\ocstreamingpool.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\opencontainers_1_8_5\include\ocsynchronizedworker.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\opencontainers_1_8_5\include\octhreadedpipelinet.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\opencontainers_1_8_5\include\ocval.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\opencontainers_1_8_5\include\ocworkercoordinatort.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\p2_test.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\permutation_client.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\permutation_server.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\pickleloader_test.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\pretty.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\ready_test.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\samplehttpserver_ex.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\save.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\serverside_ex.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\sharedmem.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\sharedmem_test.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\speed_test.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\timeconv.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\valgetopt_ex.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\valprotocol2.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\valpython.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\xml2dict.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\xmldump_ex.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\xmldump_test.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\xmlload_ex.cc" />
+    <ClCompile Include="..\..\..\PicklingTools170Release\C++\xmlload_test.cc" />
+    <ClCompile Include="src\main.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="..\packages\pthreads.redist.2.9.1.4\build\native\pthreads.redist.targets" Condition="Exists('..\packages\pthreads.redist.2.9.1.4\build\native\pthreads.redist.targets')" />
+    <Import Project="..\packages\pthreads.2.9.1.4\build\native\pthreads.targets" Condition="Exists('..\packages\pthreads.2.9.1.4\build\native\pthreads.targets')" />
+  </ImportGroup>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\pthreads.redist.2.9.1.4\build\native\pthreads.redist.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\pthreads.redist.2.9.1.4\build\native\pthreads.redist.targets'))" />
+    <Error Condition="!Exists('..\packages\pthreads.2.9.1.4\build\native\pthreads.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\pthreads.2.9.1.4\build\native\pthreads.targets'))" />
+  </Target>
+</Project>
